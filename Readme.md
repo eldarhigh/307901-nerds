@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Эльдар Хайруллин](https://up.htmlacademy.ru/htmlcss/23/user/307901).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena)
 
 ---
 
