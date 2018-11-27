@@ -12,7 +12,7 @@
 	  		<ul class="site-nav">
 	  			<li><a href="studio.html">Студия</a></li>
 	  			<li><a href="clients.html">Клиенты</a></li>
-	  			<li><a href="shop.html">Магазин</a></li>
+	  			<li><a>Магазин</a></li>
 	  			<li><a href="contact.html">Контакты</a></li>
 	  			<li><a href="cart.html" class="cart">Корзина</a></li>
 			</ul>
@@ -24,39 +24,59 @@
 			<form action="https://echo.htmlacademy.ru" method="get">
 			    <fieldset>
 					<legend>Сетка:</legend>
-					<label>
-						<input type="radio" name="grid" value="adaptive"><span>Ападптивная</span>
-					</label>
-					<label>
-						<input type="radio" name="grid" value="static">
-						<span>Фиксированная</span>
-					</label>
-					<label>
-						<input type="radio" name="grid" value="fluid">
-						<span>Резиновая</span>
-					</label>
+					<ul>
+						<li>
+							<label>
+								<input type="radio" name="grid" value="adaptive" checked><span>Ападптивная</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="grid" value="static">
+								<span>Фиксированная</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="grid" value="fluid">
+								<span>Резиновая</span>
+							</label>
+						</li>
+					</ul>
 			    </fieldset>
 				<fieldset>
 					<legend>Особенности:</legend>
-					<label>
-						<input type="checkbox" name="slider"><span>Слайдер</span>
-					</label>
-					<label>
-						<input type="checkbox" name="features"><span>Блок преимуществ</span>
-					</label>
-					<label>
-						<input type="checkbox" name="news"><span>Новости</span>
-					</label>
-					<label>
-						<input type="checkbox" name="gallery"><span>Галерея</span>
-					</label>
-					<label>
-						<input type="checkbox" name="cart"><span>Корзина</span>
-					</label>
+					<ul>
+						<li>
+							<label>
+								<input type="checkbox" name="slider" checked><span>Слайдер</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="features"><span>Блок преимуществ</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="news" checked><span>Новости</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="gallery"><span>Галерея</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="cart"><span>Корзина</span>
+							</label>
+						</li>
+					</ul>
 				</fieldset>
-				<label>
+				
 					<button type="submit">Показать</button>
-				</label>
+				
 			</form>	
 		</aside>
 
@@ -66,7 +86,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>Sedona</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>
 					<img src="img/templates/tmpl-sedona.png" alt="">					
 				</li>
@@ -75,7 +95,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>Pink</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>	
 					<img src="img/templates/tmpl-pink.png" alt="">				
 				</li>
@@ -84,7 +104,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>Barbershop</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>
 					<img src="img/templates/tmpl-barbershop.png" alt="">					
 				</li>
@@ -93,7 +113,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>Mishka</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>
 					<img src="img/templates/tmpl-mishka.png" alt="">					
 				</li>
@@ -102,7 +122,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>A+</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>	
 					<img src="img/templates/tmpl-aplus.png" alt="">				
 				</li>
@@ -111,7 +131,7 @@
 					<div class="tmpl-info">
 						<a href="#"><h2>Kvast</h2></a>
 						<p>Информационный сайт для туристов</p>
-						<button class="button-price">9 900 руб.</button>
+						<a class="button-price" href="#">9 900 руб.</a>
 					</div>	
 					<img src="img/templates/tmpl-kvast.png" alt="">				
 				</li>
@@ -127,15 +147,15 @@
 
 	<form class="popup visually-hidden" action="https://echo.htmlacademy.ru" method="post">
 		<h3>Напишите нам</h3>
-		<button class="close"></button>
-		<label for="popup-name">Ваше имя:</label>
-		<input type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+		<button class="close"><span class="visually-hidden">Закрыть</span></button>
+		<p><label for="popup-name">Ваше имя:</label>
+		<input type="text" name="name" id="popup-name" placeholder="Имя Фамилия"></p>
 
-		<label for="popup-email">Ваш email:</label>
-		<input type="text" name="email" id="popup-email" placeholder="email@example.com">
+		<p><label for="popup-email">Ваш email:</label>
+		<input type="text" name="email" id="popup-email" placeholder="email@example.com"></p>
 
-		<label for="popup-text">Текст письма:</label>
-		<textarea id="popup-text" placeholder="В свободной форме" rows="3"></textarea>
+		<p><label for="popup-text">Текст письма:</label>
+		<textarea name="message" id="popup-text" placeholder="В свободной форме" rows="3"></textarea></p>
 
 		<button type="submit">Отправить</button>
 	</form>
