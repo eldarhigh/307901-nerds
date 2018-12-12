@@ -7,3 +7,201 @@
 	height: 1px !important; 
 	width: 1px !important; 
 	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #283136;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-nav {
+	list-style: none;
+	
+}
+
+.site-nav a {
+	color: #283136;
+	text-transform: uppercase;
+	font-size: 17.5px;
+	line-height: 31.5px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+	color: #fb565a;
+}
+
+.site-nav a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+
+.services-list {
+	list-style: none;
+}
+
+.services-list h3 {
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-size: 24.5px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 31.5px;
+	color: #000000;
+
+}
+
+.services-list p {
+	line-height: 24px;
+} 
+
+.services-list .button {
+	
+	width: 160px;
+  	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 17.5px;
+	color: #ffffff;
+
+
+}
+
+.service-1 .button {
+	background-color: #fb565a;
+
+}
+
+.service-1 .button:hover,
+.service-1 .button:focus {
+	background-color: #e74246;
+}
+
+.service-1 .button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+	
+}
+
+.service-2 .button {
+	background-color: #00ca74;;
+
+}
+
+.service-2 .button:hover,
+.service-2 .button:focus {
+	background-color: #00bc6c;
+}
+
+.service-2 .button:active {
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+	
+}
+
+.service-3 .button {
+	background-color: #efc84a;;
+
+}
+
+.service-3 .button:hover,
+.service-3 .button:focus {
+	background-color: #eab534;
+}
+
+.service-3 .button:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+	
+}
+
+.footer-main {
+	
+}
+
+.footer-social b {
+	font-style: bold;
+	font-size: 35px;
+	color: #444444;
+	line-height: 35px;
+}
+
+.footer-social p {
+	line-height: 22px;
+}
+
+
+.main-header-inner {
+	background-color: #eeeeee;
+}	
+
+.main-header h1 {
+	font-family: Roboto;
+	font-size: 54px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 54px;
+	color: #000000;
+}
+
+.filters legend {
+	font-size: 17.5px;
+	line-height: 31.5px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.filters ul {
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.filters button {
+	width: 260px;
+	height: 50px;
+	background-color: #eeeeee;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.templates ul {
+	list-style: none;
+}
+
+.tmpl-info .button-price {
+	
+	background-color: #fb565a;
+	color: #ffffff;
+	text-align: center;
+}
+
+.tmpl-info .button-price:hover,
+.tmpl-info .button-price:focus {
+	background-color: #e74246;
+}
+
+.tmpl-info .button-price:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.tmpl-info h2 {
+	color: #000000;
+	font-weight: 700px;
+	font-size: 17.5px;
+	line-height: 31.5px;
+}
+
