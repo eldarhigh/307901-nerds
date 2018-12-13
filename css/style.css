@@ -24,6 +24,11 @@ a {
 	text-decoration: none;
 }
 
+.main-header {
+	background-color: #eeeeee;
+}
+
+
 .site-nav {
 	list-style: none;
 	
@@ -34,6 +39,7 @@ a {
 	text-transform: uppercase;
 	font-size: 17.5px;
 	line-height: 31.5px;
+	font-weight: 500;
 }
 
 .site-nav a:hover,
@@ -47,13 +53,30 @@ a {
 }
 
 
+
+.main-logo:hover,
+.main-logo:focus {
+	width: 240px;
+	height: 50px;
+	background-image: url("/img/nerds-logo.svg");
+	opacity: 0.8;
+
+}
+
+.main-logo:active {
+	width: 240px;
+	height: 50px;
+	background-image: url("/img/nerds-logo.svg");
+	opacity: 0.3;
+
+}
+
 .services-list {
 	list-style: none;
 }
 
 .services-list h3 {
 	text-transform: uppercase;
-	font-family: Roboto;
 	font-size: 24.5px;
 	font-weight: bold;
 	font-style: normal;
@@ -131,9 +154,9 @@ a {
 }
 
 .footer-social b {
-	font-style: bold;
+	font-weight: bold;
 	font-size: 35px;
-	color: #444444;
+	color: #000000;
 	line-height: 35px;
 }
 
@@ -146,8 +169,7 @@ a {
 	background-color: #eeeeee;
 }	
 
-.main-header h1 {
-	font-family: Roboto;
+header h1 {
 	font-size: 54px;
 	font-weight: 500;
 	font-style: normal;
@@ -160,6 +182,7 @@ a {
 	line-height: 31.5px;
 	color: #000000;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .filters ul {
@@ -175,6 +198,7 @@ a {
 	background-color: #eeeeee;
 	color: #000000;
 	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .templates ul {
@@ -203,5 +227,6 @@ a {
 	font-weight: 700px;
 	font-size: 17.5px;
 	line-height: 31.5px;
+	text-transform: uppercase;
 }
 
