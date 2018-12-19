@@ -20,18 +20,61 @@ body {
 	
 }
 
+.container {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #283136;	
+}
+
 a {
 	text-decoration: none;
 }
 
+/* Стили для шапки сайта */
+
 .main-header {
 	background-color: #eeeeee;
+	min-height: 115px;
+	display: flex;
+}
+
+/* Логотип */
+
+.main-logo {
+	width: 240px;
+	height: 50px;
+	margin-left: 140px;
+	align-items: center;	
+}
+
+.main-logo:hover,
+.main-logo:focus {
+	width: 240px;
+	height: 50px;
+	background-image: url("/img/nerds-logo.svg");
+	opacity: 0.8;
+}
+
+.main-logo:active {
+	width: 240px;
+	height: 50px;
+	background-image: url("/img/nerds-logo.svg");
+	opacity: 0.3;
 }
 
 
+/* МЕНЮ */
+
 .site-nav {
-	list-style: none;
-	
+	display: flex;
+	box-sizing: border-box;
+	width: 1160px;
+	min-height: 115px;
+	padding-top: 50px;
 }
 
 .site-nav a {
@@ -40,7 +83,9 @@ a {
 	font-size: 17.5px;
 	line-height: 31.5px;
 	font-weight: 500;
+	margin-right: 50px;
 }
+
 
 .site-nav a:hover,
 .site-nav a:focus {
@@ -52,24 +97,26 @@ a {
 	opacity: 0.3;
 }
 
-
-
-.main-logo:hover,
-.main-logo:focus {
-	width: 240px;
-	height: 50px;
-	background-image: url("/img/nerds-logo.svg");
-	opacity: 0.8;
-
+.main-nav {
+	display: flex;
+	align-items: center;
+	width: 800px;
+	margin-left: 200px;
 }
 
-.main-logo:active {
-	width: 240px;
-	height: 50px;
-	background-image: url("/img/nerds-logo.svg");
-	opacity: 0.3;
-
+.main-nav .cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+	
 }
+
+
+
+/* Стили для body */
+
+
 
 .services-list {
 	list-style: none;
@@ -149,8 +196,14 @@ a {
 	
 }
 
-.footer-main {
+.services {
+	display: flex;
 	
+
+}
+
+.services-list {
+	display: flex;
 }
 
 .footer-social b {
@@ -230,3 +283,4 @@ header h1 {
 	text-transform: uppercase;
 }
 
+/* СЕТОЧНЫЕ СТИЛИ */
