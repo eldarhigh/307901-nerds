@@ -9,6 +9,10 @@
 	overflow: hidden;
 }
 
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -17,6 +21,7 @@ body {
 	line-height: 24px;
 	font-weight: normal;
 	color: #283136;
+	
 	
 }
 
@@ -45,36 +50,35 @@ a {
 /* Логотип */
 
 .main-logo {
-	width: 240px;
-	height: 50px;
+	width: 160px;
+	height: 65px;
 	margin-left: 140px;
-	align-items: center;	
+	/*align-items: center;*/	
 }
 
 .main-logo:hover,
 .main-logo:focus {
-	width: 240px;
-	height: 50px;
+	width: 160px;
+	height: 65px;
 	background-image: url("/img/nerds-logo.svg");
 	opacity: 0.8;
 }
 
 .main-logo:active {
-	width: 240px;
-	height: 50px;
+	width: 160px;
+	height: 65px;
 	background-image: url("/img/nerds-logo.svg");
 	opacity: 0.3;
 }
-
 
 /* МЕНЮ */
 
 .site-nav {
 	display: flex;
-	box-sizing: border-box;
 	width: 1160px;
 	min-height: 115px;
 	padding-top: 50px;
+	align-items: center;
 }
 
 .site-nav a {
@@ -99,12 +103,12 @@ a {
 
 .main-nav {
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	width: 800px;
 	margin-left: 200px;
 }
 
-.main-nav .cart {
+.main-nav .cart { /* не работает :(( */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -116,10 +120,28 @@ a {
 
 /* Стили для body */
 
+.services {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 140px;
+	
 
+}
 
 .services-list {
+	display: flex;
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+
+[class^="service-"] {
+	
+	width: 300px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .services-list h3 {
@@ -196,68 +218,6 @@ a {
 	
 }
 
-.services {
-	display: flex;
-	
-
-}
-
-.services-list {
-	display: flex;
-}
-
-.footer-social b {
-	font-weight: bold;
-	font-size: 35px;
-	color: #000000;
-	line-height: 35px;
-}
-
-.footer-social p {
-	line-height: 22px;
-}
-
-
-.main-header-inner {
-	background-color: #eeeeee;
-}	
-
-header h1 {
-	font-size: 54px;
-	font-weight: 500;
-	font-style: normal;
-	line-height: 54px;
-	color: #000000;
-}
-
-.filters legend {
-	font-size: 17.5px;
-	line-height: 31.5px;
-	color: #000000;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.filters ul {
-	list-style: none;
-	font-size: 16px;
-	line-height: 20px;
-	color: #283136;
-}
-
-.filters button {
-	width: 260px;
-	height: 50px;
-	background-color: #eeeeee;
-	color: #000000;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-
-.templates ul {
-	list-style: none;
-}
-
 .tmpl-info .button-price {
 	
 	background-color: #fb565a;
@@ -283,4 +243,159 @@ header h1 {
 	text-transform: uppercase;
 }
 
-/* СЕТОЧНЫЕ СТИЛИ */
+.filters fieldset {
+	font-size: 17.5px;
+	line-height: 31.5px;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+
+}
+
+.filters ul {
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+
+
+.filters button {
+	width: 260px;
+	height: 50px;
+	background-color: #eeeeee;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 0px;
+}
+
+
+/* СТИЛИ ДЛЯ ФУТЕРА */
+
+.footer-main {
+	display: flex;
+	min-width: 1160px;
+	min-height: 217px;
+	margin-left: 140px;
+	
+}
+
+.footer-social {
+	display: flex;
+	width: 100%;
+	
+}
+
+.footer-social ul {
+	display: flex;
+	width: 264px;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.footer-text {
+	display: flex;
+	flex-direction: column;
+	min-width: 400px;
+	margin-left: 140px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.footer-text b {
+	width: 100%;
+	font-weight: bold;
+	font-size: 35px;
+	color: #000000;
+	line-height: 35px;
+	
+	
+}
+
+.footer-text p {
+	width: 100%;
+	line-height: 22px;
+	color: #444444;	
+	
+	
+}
+
+
+
+
+/* ВНУТРЕННИЕ СТРАНИЦЫ */
+
+/* СТИЛИ ДЛЯ ХЕДЕРА */
+
+.main-header-inner {
+	display: flex;
+	min-height: 115px;
+	min-width: 1160px;
+	background-color: #eeeeee;
+	flex-wrap: wrap;
+	
+}
+
+
+
+
+.inner-heading {
+	display: flex;
+	flex-direction: row;
+	align-self: flex-end;
+}
+
+header h1 {
+	font-size: 54px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 54px;
+	color: #000000;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 120px;
+	margin-top: 80px;
+}
+
+
+
+/* БОДИ */
+
+.catalog {
+	display: flex;
+
+}
+
+.filters {
+	display: flex;
+	min-width: 260px;
+	margin-top: 60px;
+	margin-left: 140px;
+	margin-right: 140px;
+	
+}
+
+.templates {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.template {
+	min-width: 360px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+	
+
+}
+
