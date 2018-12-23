@@ -26,13 +26,11 @@ body {
 }
 
 .container {
-	margin: 0;
-	padding: 0;
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: normal;
-	color: #283136;	
+	width: 1200px;
+	margin: 0 auto;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	margin-left: 140px;
 }
 
 a {
@@ -52,7 +50,7 @@ a {
 .main-logo {
 	width: 160px;
 	height: 65px;
-	margin-left: 140px;
+	
 	/*align-items: center;*/	
 }
 
@@ -116,22 +114,18 @@ a {
 	
 }
 
-
-
 /* Стили для body */
 
 .services {
 	display: flex;
 	justify-content: flex-start;
-	margin-left: 140px;
 	
-
 }
 
 .services-list {
 	display: flex;
 	list-style: none;
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
 	flex-wrap: wrap;
 }
@@ -142,6 +136,10 @@ a {
 	margin-right: 100px;
 	margin-top: 100px;
 	margin-bottom: 100px;
+}
+
+.service-3 {
+	margin-right: 0px;
 }
 
 .services-list h3 {
@@ -166,13 +164,10 @@ a {
 	text-transform: uppercase;
 	font-size: 17.5px;
 	color: #ffffff;
-
-
 }
 
 .service-1 .button {
 	background-color: #fb565a;
-
 }
 
 .service-1 .button:hover,
@@ -198,13 +193,11 @@ a {
 
 .service-2 .button:active {
 	background-color: #00aa62;
-	color: rgba(255, 255, 255, 0.3);
-	
+	color: rgba(255, 255, 255, 0.3);	
 }
 
 .service-3 .button {
 	background-color: #efc84a;;
-
 }
 
 .service-3 .button:hover,
@@ -215,8 +208,9 @@ a {
 .service-3 .button:active {
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
-	
 }
+
+/* SHOP TEMPLATES */
 
 .tmpl-info .button-price {
 	
@@ -279,7 +273,6 @@ a {
 	display: flex;
 	min-width: 1160px;
 	min-height: 217px;
-	margin-left: 140px;
 	
 }
 
@@ -352,7 +345,7 @@ a {
 	align-self: flex-end;
 }
 
-header h1 {
+.main-header-inner h1 {
 	font-size: 54px;
 	font-weight: 500;
 	font-style: normal;
@@ -375,9 +368,8 @@ header h1 {
 
 .filters {
 	display: flex;
-	min-width: 260px;
+	width: 260px;
 	margin-top: 60px;
-	margin-left: 140px;
 	margin-right: 140px;
 	
 }
