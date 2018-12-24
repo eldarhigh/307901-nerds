@@ -28,9 +28,9 @@ body {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	/*padding-left: 20px;
-	padding-right: 20px;*/
-	margin-left: 140px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*margin-left: 140px;*/
 }
 
 a {
@@ -125,7 +125,6 @@ a {
 .services-list {
 	display: flex;
 	list-style: none;
-	margin: 0px auto;
 	padding: 0px;
 	flex-wrap: wrap;
 }
@@ -387,7 +386,9 @@ a {
 	min-width: 360px;
 	margin-right: 40px;
 	margin-bottom: 35px;
-	
+}
 
+.template:nth-child(2n) {
+	margin-right: 0px;
 }
 
