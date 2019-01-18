@@ -1,3 +1,35 @@
+/* Сброс стилей по умолчанию */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  
+	padding: 0; 
+	margin: 0; 
+	} 
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+} 
+fieldset,img {  
+	border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+	font-weight: normal; 
+	font-style: normal; 
+} 
+ol,ul { 
+	list-style: none; 
+} 
+caption,th { 
+	text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+	font-weight: normal; 
+	font-size: 100%; 
+} 
+q:before,q:after { 
+	content:''; 
+} 
+abbr,acronym { border: 0; 
+} 
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -45,13 +77,57 @@ a {
 	display: flex;
 }
 
+
+
+/* МЕНЮ */
+
+.site-nav {
+	display: flex;
+	width: 1160px;
+	min-height: 115px;
+	padding-top: 50px;
+	align-items: center;
+	
+}
+
+.site-nav a {
+	color: #283136;
+	text-transform: uppercase;
+	font-size: 17.5px;
+	line-height: 31.5px;
+	font-weight: 500;
+	
+}
+
+.main-nav a {
+	margin-right: 50px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+	color: #fb565a;
+}
+
+.site-nav a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.main-nav {
+	display: flex;
+	/*align-items: center;*/
+	width: 800px;
+	
+}
+
+
+
 /* Логотип */
 
 .main-logo {
 	width: 160px;
 	height: 65px;
-	
-	/*align-items: center;*/	
+	margin-right: 200px;
 }
 
 .main-logo:hover,
@@ -69,56 +145,62 @@ a {
 	opacity: 0.3;
 }
 
-/* МЕНЮ */
-
-.site-nav {
-	display: flex;
-	width: 1160px;
-	min-height: 115px;
-	padding-top: 50px;
-	align-items: center;
-}
-
-.site-nav a {
-	color: #283136;
-	text-transform: uppercase;
-	font-size: 17.5px;
-	line-height: 31.5px;
-	font-weight: 500;
-	margin-right: 50px;
-}
-
-
-.site-nav a:hover,
-.site-nav a:focus {
-	color: #fb565a;
-}
-
-.site-nav a:active {
-	color: #000000;
-	opacity: 0.3;
-}
-
-.main-nav {
-	display: flex;
-	/*align-items: center;*/
-	width: 800px;
-	margin-left: 200px;
-}
-
-.main-nav .cart { /* не работает :(( */
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	
-	
-}
 
 /* Стили для body */
+
+.slider {
+	background-color: #eeeeee; 
+	position: relative;
+	width: 100%;
+	min-height: 413px;
+	margin: 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider .banner-main {
+	width: 698px;
+	height: 413px;
+	position: absolute;
+	left: 571px;
+	top: 0px;
+	/*background-image: url('/img/slide-1.png');*/
+}
+
+.slider h2 {
+	font-size: 55px;
+	display: inline-block;
+	width: 380px;
+	line-height: 55px;
+	font-weight: 500;
+	margin-top: 85px;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.slider p {
+	display: inline-block;
+	width: 380px;
+	margin-bottom: 40px;
+}
+
+.slider-button {
+	display: inline-block;
+	width: 240px;
+	height: 50px;
+	background-color: #fb565a;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
 
 .services {
 	display: flex;
 	justify-content: flex-start;
+	margin-bottom: 80px;
 	
 }
 
@@ -134,11 +216,14 @@ a {
 	width: 300px;
 	margin-right: 100px;
 	margin-top: 100px;
-	margin-bottom: 100px;
 }
 
 .service-3 {
 	margin-right: 0px;
+}
+
+.services-list img {
+	margin-bottom: 25px;
 }
 
 .services-list h3 {
@@ -148,14 +233,17 @@ a {
 	font-style: normal;
 	line-height: 31.5px;
 	color: #000000;
+	margin-bottom: 25px;
 
 }
 
 .services-list p {
 	line-height: 24px;
+	margin-bottom: 35px;
 } 
 
 .services-list .button {
+	display: inline-block;
 	
 	width: 160px;
   	height: 50px;
@@ -163,6 +251,11 @@ a {
 	text-transform: uppercase;
 	font-size: 17.5px;
 	color: #ffffff;
+	line-height: 50px;
+}
+
+.services-list .button p {
+	vertical-align: middle;
 }
 
 .service-1 .button {
@@ -208,6 +301,71 @@ a {
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
 }
+
+
+.partners {
+	display: flex;
+	height: 180px;
+	border-bottom: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 80px;
+}
+
+.divide-mini {
+	width: 2px;
+	height: 52px;
+	background-color: #eeeeee;
+}
+
+.map {
+	width: 1440px;
+	height: 416px;
+	margin-left: 0px;
+	position: relative;
+}
+
+.address {
+	position: absolute;
+	width: 310px;
+	height: 310px;
+	background-color: #fff;
+	bottom: 50px;
+	left: 140px;
+
+}
+
+.address p {
+	color: #666666;
+	margin-left: 50px;
+}
+
+.address .name {
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	color: #000;
+}
+
+.button-popup {
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #fb565a;
+	position: absolute;
+	left: 50px;
+	bottom: 45px;
+	text-transform: uppercase;
+	border: 0;
+}
+
+
 
 /* SHOP TEMPLATES */
 
@@ -281,6 +439,7 @@ a {
 	
 }
 
+
 .footer-social ul {
 	display: flex;
 	width: 264px;
@@ -290,6 +449,21 @@ a {
 	padding: 0px;
 	margin-top: 70px;
 	margin-bottom: 70px;
+}
+
+.footer-social li {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-color: #e1e1e1;
+	vertical-align: middle;
+	border-radius: 50%;
+	
+}
+
+.social-vk {
+	background-image: url("/img/vk.png");
+	
 }
 
 .footer-text {
@@ -307,6 +481,7 @@ a {
 	font-size: 35px;
 	color: #000000;
 	line-height: 35px;
+	margin-bottom: 10px;
 	
 	
 }
@@ -314,7 +489,7 @@ a {
 .footer-text p {
 	width: 100%;
 	line-height: 22px;
-	color: #444444;	
+	color: #666666;	
 	
 	
 }
@@ -392,3 +567,99 @@ a {
 	margin-right: 0px;
 }
 
+/* ABOUT */
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.about-studio {
+	width: 652px;
+	margin-bottom: 45px;
+	margin-right: 147px;
+}
+
+.about-studio h2 {
+	font-size: 45.5px;
+	line-height: 45.5px;
+	margin-bottom: 35px;
+	color: #000;
+}
+
+.about-image {
+	position: absolute;
+	top: -40px;
+	left: 800px;
+}
+
+
+.about-services b {
+	text-transform: uppercase;
+	padding-bottom: 14px;
+	display: block;
+	
+}
+
+.about-services li {
+	padding: 14px 0;
+	color: #283136;
+	display: block;
+	position: relative;
+	padding-left: 40px; 
+}
+
+.about-services li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+	left: 0px;
+	vertical-align: middle;
+	top: 24px;
+}
+
+.about-services {
+	margin-right: 370px;
+	margin-bottom: 80px;
+}
+
+
+
+.about-conditions ul {
+	display: flex;
+	
+}
+
+.about-conditions b {
+	text-transform: uppercase;
+}
+
+.conditions-head {
+	font-size: 45px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	margin-right: 20px;
+	
+}
+
+.conditions-head:last-child {
+	margin-right: 0;
+}
+
+
+.conditions-head sup {
+	vertical-align: bottom;
+	font-size: 32px;
+}
+
+.divide {
+	width: 1160px;
+	height: 2px;
+	background-color: #eeeeee;
+	margin-bottom: 80px;
+}
